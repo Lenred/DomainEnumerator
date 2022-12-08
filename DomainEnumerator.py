@@ -1,7 +1,3 @@
-### Lennart Labahn
-### Domain Enumerator
-### Dec 8.12.2022
-
 import urllib.parse
 
 def enumerate_subdomains_and_paths(domain):
@@ -16,6 +12,8 @@ def enumerate_subdomains_and_paths(domain):
         for path in paths:
             print(f"{subdomain}.{domain}/{path}")
 
-# Example usage
-enumerate_subdomains_and_paths("www.example.com")
+# Ask the user for a domain
+domain = input("Enter a domain: ")
 
+# Enumerate the subdomains and paths of the given domain
+enumerate_subdomains_and_paths(domain)
