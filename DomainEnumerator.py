@@ -22,7 +22,8 @@ domain = input("Enter a domain: ")
 # Enumerate the subdomains and paths of the given domain
 output = enumerate_subdomains_and_paths(domain)
 
-outputFile = ("Please give a file name for the subdomains and path: ")
+# Ask the user for an output file name
+output_file = input("Please give a file name for the subdomains and paths: ")
 
 # Save the output to a file
-save_output_to_file(output, outputFile)
+save_output_to_file(output, output_file)
