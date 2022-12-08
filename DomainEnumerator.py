@@ -12,8 +12,17 @@ def enumerate_subdomains_and_paths(domain):
         for path in paths:
             print(f"{subdomain}.{domain}/{path}")
 
+def save_output_to_file(output, filename):
+    with open(filename, "w") as file:
+        file.write(output)
+
 # Ask the user for a domain
 domain = input("Enter a domain: ")
 
 # Enumerate the subdomains and paths of the given domain
-enumerate_subdomains_and_paths(domain)
+output = enumerate_subdomains_and_paths(domain)
+
+outputFile = ("Please give a file name for the subdomains and path: ")
+
+# Save the output to a file
+save_output_to_file(output, outputFile)
