@@ -3,7 +3,7 @@ This should enumerate all Subdomains and paths of a Domain.
 
 +++++ Change Log +++++
 
-
+> Dec 8 2022 - Added user input
 
 +++++ Notes to track +++++
 
