@@ -8,9 +8,13 @@ def enumerate_subdomains_and_paths(domain):
     paths = parsed_domain.path.split('/')
 
     # Enumerate all possible combinations of subdomains and paths
+    results = []
     for subdomain in subdomains:
         for path in paths:
-            print(f"{subdomain}.{domain}/{path}")
+            results.append(f"{subdomain}.{domain}/{path}")
+
+    # Return the results as a string
+    return "\n".join(results)
 
 def save_output_to_file(output, filename):
     with open(filename, "w") as file:
